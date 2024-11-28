@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WezaLife</title>
+
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/poppins/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/cabinet-grotesk/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- Development css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="/assets/css/style.min.css" /> -->
+</head>
+
+<body class="page-wrapper relative bg-colorDark">
+        <!-- ...:::Header Start:::... -->
+        <header class="section-header site-header fixed top-0 z-30 w-full py-[30px]">
+            <!-- Section Container -->
+            <div class="container">
+                <!-- Header Area -->
+                <div class="grid grid-cols-[auto_auto] justify-between">
+                    <!-- Header Left Block -->
+                    <div class="flex items-center gap-[50px]">
+                        <!-- Header Logo -->
+                        <a href='/'>
+                            <img src="assets/img/logo-white.png" alt="logo-white" width="118" height="25" class="h-auto max-w-full" />
+                        </a>
+                        <!-- Header Logo -->
+
+                        <!-- Header Navigation -->
+                        <div class="menu-block-wrapper">
+                            <div class="menu-overlay"></div>
+                            <nav class="menu-block" id="append-menu-header">
+                                <div class="mobile-menu-head">
+                                    <div class="go-back">
+                                        <img src="assets/img/icon/icon-arrow-left.svg" alt="icon-arrow-left" width="16" height="8" class="rotate-90" />
+                                    </div>
+                                    <div class="current-menu-title"></div>
+                                    <div class="mobile-menu-close">&times;</div>
+                                </div>
+                                <ul class="site-menu-main">
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="index.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >Nyumbani
+
+                                    </a>
+
+                                  </li>
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="about.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >About
+
+                                    </a>
+
+                                  </li>
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="blog.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >Insights
+
+                                    </a>
+
+                                  </li>
+                                  <li
+                                    class="nav-item rounded-none border border-transparent py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:px-5 lg:text-white"
+                                  >
+                                    <a class='nav-link-item' href="contact.html">Contact</a>
+                                  </li>
+
+
+
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Navigation -->
+                    </div>
+                    <!-- Header Left Block -->
+
+                    <!-- Header Right Block -->
+                    <div class="flex items-center gap-11">
+                        <!-- Search Button -->
+                        <div class="relative">
+                            <button id="toggleButton">
+                                <img src="assets/img/icon/icon-gray-search.svg" alt="icon-gray-search" width="15" height="15" class="h-5 w-5" />
+                            </button>
+                            <div id="searchContainer" class="absolute translate-y-[30px] right-0 ml-4 hidden">
+                                <input type="search" placeholder="Search..." class="border bg-colorDark rounded-[27px] px-4 py-2 focus:outline-none" />
+                            </div>
+                        </div>
+                        <!-- Search Button -->
+
+                        <!-- WhatsApp Link -->
+                        <div class="rounded-[27px] border border-white/[9%] bg-white/10 px-5 py-2 text-sm font-medium text-white/85 hidden xxl:inline-block hidden xxl:inline-block">
+                            WhatsApp:
+                            <a href="tel:+234534890111" class="font-semibold text-white">(+254) 768-893-142</a>
+                        </div>
+                        <!-- WhatsApp Link -->
+
+                        <!-- Menu Button -->
+                        <button class="hidden">
+                            <img src="assets/img/icon/icon-white-menu-line.svg" alt="icon-white-menu-line" width="24" height="24" class="h-6 w-6" />
+                        </button>
+                        <!-- Menu Button -->
+
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span class="bg-white before:bg-white after:bg-white"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header Right Block -->
+                </div>
+                <!-- Header Area -->
+            </div>
+            <!-- Section Container -->
+        </header>
+        <!-- ...::Header End:::... -->
+
+    <!-- Main Wrapper -->
+    <main class="main-wrapper">
+        <!-- ...:::Breadcrumb Section Start:::... -->
+        <section class="section-breadcrumb">
+            <div class="relative z-10">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Breadcrumb Wrapper -->
+                    <div class="breadcrumb-wrapper">
+                        <!-- Breadcrumb Nav -->
+                        <ul class="breadcrumb-nav">
+                            <li>
+                                <a href="index.html">Nyumbani</a>
+                            </li>
+                            <li>Blog</li>
+                        </ul>
+                        <!-- Breadcrumb Nav -->
+
+                        <!-- Breadcrumb Title -->
+                        <h1 class="breadcrumb-title">Our Blog</h1>
+                        <!-- Breadcrumb Title -->
+                    </div>
+                    <!-- Breadcrumb Wrapper -->
+                </div>
+                <!-- Section Container -->
+
+                <!-- Breadcrumb Background -->
+                <div class="absolute inset-0 -z-10">
+                    <img src="assets/img/images/th-1/breadcrumb.jpg" alt="breadcrumb" width="1920" height="421" class="h-full w-full object-cover" />
+                </div>
+                <!-- Breadcrumb Background -->
+            </div>
+        </section>
+        <!-- ...:::Breadcrumb Section End:::... -->
+
+        <!-- ...:::Blog Section Start:::... -->
+        <section class="section-blog">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container-custom">
+                    <!-- Blog Area -->
+                    <div class="grid grid-cols-1 items-start gap-x-6 gap-y-12 lg:grid-cols-[1fr_minmax(0,_0.7fr)] xl:grid-cols-[1fr_minmax(0,_0.5fr)]">
+                        <div class="flex flex-col gap-y-20">
+                            <!-- Blog Details -->
+                            <article class="flex flex-col gap-y-10">
+                                <!-- Blog Details Main Image  -->
+                                <img src="assets/img/images/th-1/blog-details-img.png" alt="blog-details" width="872" height="439" loading="lazy" class="h-auto w-full max-w-full" />
+                                <!-- Blog Details Main Image  -->
+
+                                <!-- Post Meta -->
+                                <div class="flex flex-wrap gap-[25px] text-sm">
+                                    <a href="#" class="relative text-white/70 after:absolute after:left-[calc(100%+12.5px)] after:top-1/2 after:h-[5px] after:w-[5px] after:-translate-y-1/2 after:rounded-[50%] after:bg-white/70 last:after:hidden hover:text-colorOrange">Admin</a>
+                                    <a href="#" class="relative text-white/70 after:absolute after:left-[calc(100%+12.5px)] after:top-1/2 after:h-[5px] after:w-[5px] after:-translate-y-1/2 after:rounded-[50%] after:bg-white/70 last:after:hidden hover:text-colorOrange">23 January 2024</a>
+                                </div>
+                                <!-- Post Meta -->
+                                <!-- Blog Details Title -->
+                                <h2>The Future of Work: How Technology is Redefining Careers and Opportunities</h2>
+                                <!-- Blog Details Title -->
+
+                                <!-- Rich Text Area-->
+                                <div class="rich-text">
+                                    <p>
+
+
+
+
+
+The workplace is evolving at an unprecedented pace, driven by rapid technological advancements, globalization, and shifting societal expectations. From remote work to artificial intelligence, the future of work is shaping up to be vastly different from what we know today. This article explores the key trends shaping the future of work, the skills required to thrive, and how individuals and organizations can adapt to stay ahead.
+
+<h3>Key Trends Shaping the Future of Work</h3>
+
+<h4>Remote Work and Hybrid Models</h4>
+    <li> The COVID-19 pandemic accelerated the adoption of remote work, proving that productivity is not tied to physical offices.</li>
+    <li>Hybrid work models, which combine in-office and remote work, are becoming the norm. Companies are redesigning workspaces to foster collaboration while accommodating remote teams.</li>
+
+<h4>Automation and Artificial Intelligence</h4>
+    <li> AI and robotics are automating repetitive tasks, increasing efficiency, and reducing costs.</li>
+    <li> Jobs in manufacturing, customer service, and even professional fields like law and medicine are being transformed by AI tools.</li>
+
+<h4>Gig Economy and Freelancing</h4>
+    <li> Platforms like Upwork, Fiverr, and Toptal are enabling professionals to work independently, offering flexibility and control over their careers.</li>
+    <li>The gig economy is growing, with more people choosing freelance work over traditional employment.</li>
+
+<h4>Emphasis on Employee Well-being</h4>
+   <li>Organizations are prioritizing mental health, work-life balance, and employee satisfaction to attract and retain top talent.</li>
+    <li>Initiatives such as flexible work hours, wellness programs, and mental health resources are becoming standard.</li>
+
+<h4>Reskilling and Lifelong Learning</h4>
+    <li>As technology disrupts industries, the demand for new skills is rising.</li>
+    <li>Employers and employees are investing in continuous learning to stay relevant in a competitive job market.</li>
+
+<h4>Global Talent Pools</h4>
+   <li> Remote work has enabled companies to tap into talent from around the world, breaking down geographical barriers.</li>
+   <li> This globalization of the workforce creates opportunities and challenges, including cultural integration and competition.</li>
+
+<h4>The Role of Technology in Redefining Work</h3>
+
+<h4>Collaboration Tools</h4>
+    <li> Tools like Zoom, Slack, and Microsoft Teams have made remote collaboration seamless.</li>
+   <li>Virtual reality (VR) and augmented reality (AR) are emerging as platforms for immersive team meetings and training.</li>
+
+<h4>AI in Recruitment and Performance Management</h4>
+    <li>AI is streamlining hiring processes through automated resume screening and predictive analytics.</li>
+   <li>AI-powered tools are being used to monitor employee performance and provide personalized feedback.</li>
+
+<h4>Blockchain and Smart Contracts</h4>
+   - Blockchain technology ensures secure and transparent transactions, especially in freelance and gig work.</li>
+   - Smart contracts are automating payment processes and reducing disputes in the gig economy.</li>
+
+<h4>Digital Nomadism</h4>
+    <li>Technology has enabled a lifestyle where people can work from anywhere, supported by coworking spaces and reliable internet.</li>
+    <li>Governments are introducing digital nomad visas to attract remote workers.</li>
+
+<h3>Skills for the Future Workforce</h3>
+
+To thrive in the future of work, individuals must focus on developing the following skills:
+
+<h4>Digital Literacy</h4>
+    <li> Proficiency in tools like data analytics, coding, and AI is becoming essential.</li>
+   <li>Understanding how to work alongside technology will be a key differentiator.</li>
+
+<h4>Emotional Intelligence (EQ)</h4>
+   <li>As automation takes over technical tasks, human skills like empathy, communication, and leadership will gain prominence.</li>
+
+<h4>Adaptability and Resilience</h4>
+   <li> The ability to adapt to change and recover from setbacks will be critical in navigating a dynamic job market.</li>
+
+<h4>Creative Problem-Solving</h4>
+   - Innovation and the ability to approach challenges from different perspectives will set top performers apart.</li>
+
+<h4>Collaboration and Cross-Cultural Communication</h4>
+    <li>Working effectively in diverse teams across time zones and cultural contexts is becoming a core competency.</li>
+
+<h4>Critical Thinking</h4>
+   <li>Analyzing information, questioning assumptions, and making data-driven decisions will be highly valued.</li>
+
+<h3>Industries Poised for Growth</h3>
+
+<h4>Technology and IT</h4>
+   <li>The demand for software developers, cybersecurity experts, and data scientists is skyrocketing.</li>
+
+<h4>Healthcare and Biotechnology</h4>
+   <li>Advances in personalized medicine, telehealth, and wearable technology are driving growth.</li>
+
+<h4>Green Energy and Sustainability</h4>
+   <li>The global push for renewable energy and eco-friendly solutions is creating new opportunities in green technology.</li>
+
+<h4>E-Commerce and Logistics</h4>
+    <li> The boom in online shopping has increased demand for supply chain management and last-mile delivery solutions.</li>
+
+<h4>Education and E-Learning</h4>
+    <li>Remote learning platforms and edtech innovations are transforming education.</li>
+
+<h3>Challenges and Ethical Considerations</h3>
+
+<h4>Job Displacement</h4>
+   <li>Automation may render certain roles obsolete, requiring proactive reskilling initiatives.</li>
+
+<h4>Privacy Concerns</h4>
+   <li>The use of AI and surveillance tools in the workplace raises questions about employee privacy.</li>
+
+<h4>Digital Divide</h4>
+   <li>Unequal access to technology could widen economic disparities, leaving some workers behind.</li>
+
+<h4>Work-Life Boundaries</h4>
+   <li>The blurring lines between work and personal life in remote settings can lead to burnout if not managed effectively.</li>
+
+<h4>Ethical AI Usage</h4>
+    <li>Ensuring AI is used responsibly and without bias is crucial as it becomes more integrated into work processes.</li>
+
+<h3>How Organizations Can Prepare</h3>
+
+<h4>Foster a Culture of Innovation</h4>
+   <li>Encourage experimentation and reward creative thinking.</li>
+
+<h4>Invest in Employee Development</h4>
+   <li>Provide opportunities for reskilling and upskilling to future-proof the workforce.</li>
+
+<h4>Adopt Agile Practices</h4>
+    <li>Embrace flexible workflows that can adapt to changing market demands.</li>
+
+<h4>Leverage Diversity*
+    <li>Build inclusive teams that bring diverse perspectives and ideas.</li>
+
+<h4>Focus on Employee Well-being</h4>
+    <li>Implement policies that support mental health, physical wellness, and work-life balance.</li>
+
+<h3>How Individuals Can Adapt</h3>
+
+<h4>Be Proactive</h4>
+   <li>Stay ahead by continuously learning new skills and seeking growth opportunities.</li>
+
+<h4>Network Effectively</h4>
+    <li>Build relationships within and outside your industry to uncover new opportunities.</li>
+
+<h4>Embrace Technology</h4>
+    <li>Stay updated on the latest tools and trends relevant to your field.</li>
+
+<h4>Create a Personal Brand</h4>
+    <li>Showcase your expertise through blogs, LinkedIn posts, or professional networks.</li>
+
+<h4>Develop a Growth Mindset</h4>
+   <li>View challenges as opportunities to learn and improve.</li>
+
+<h3>Conclusion</h3>
+
+The future of work offers immense opportunities for those who are prepared. By staying informed, embracing technology, and cultivating essential skills, individuals and organizations can not only survive but thrive in this new era.
+
+
+
+
+                                    </p>
+
+
+
+
+
+
+
+                                    <blockquote class="bg-colo">
+                                        What are your thoughts on the future of work?* Let us know in the comments, and share how you're preparing for the changes ahead.
+                                    </blockquote>
+
+                                </div>
+                                <!-- Rich Text Area-->
+                            </article>
+                            <!-- Blog Details -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Posts</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Recent Post Widget -->
+                                <ul class="flex flex-col gap-y-4">
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-1.jpg" alt="recent-post-img-1" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">23 January, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>How to manage your own business in next generation</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-2.jpg" alt="recent-post-img-2" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">09 April, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>Solving your problem with artificial inteeligence</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-3.jpg" alt="recent-post-img-3" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">23 July, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>You can grow up your own business with AI</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Recent Post Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Contact Us</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Contact Widget -->
+                                <form action="#" method="get" class="flex flex-col gap-y-10">
+                                    <input type="text" name="sidebar-name" id="sidebar-name" placeholder="Your name" class="animate-transition w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required />
+                                    <input type="email" name="sidebar-email" id="sidebar-email" placeholder="Your email" class="animate-transition w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required />
+                                    <textarea name="sidebar-message" id="sidebar-message" placeholder="Your message" class="animate-transition min-h-40 w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required></textarea>
+                                    <button type="submit" class="btn group flex items-center justify-center gap-x-3 border border-colorOrange px-9 py-4 text-colorOrange">
+                                        Send Message
+                                        <span class="relative flex items-center overflow-hidden">
+                                            <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition h-3 w-6 translate-x-0 group-hover:translate-x-full" />
+                                            <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition absolute inset-0 h-3 w-6 -translate-x-full group-hover:translate-x-0" />
+                                        </span>
+                                    </button>
+                                </form>
+                                <!-- Contact Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Tags</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Tags Widget -->
+                                <ul class="flex flex-wrap gap-[14px] text-sm">
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Education</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Optimization</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Creator</a>
+                                    </li>
+                                </ul>
+                                <!-- Tags Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+                        </aside>
+                        <!-- Sidebar Block -->
+                    </div>
+                    <!-- Blog Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...:::Blog Section End:::... -->
+    </main>
+    <!-- Main Wrapper -->
+
+    <!-- ...:::Footer Start:::... -->
+    <footer class="section-footer">
+        <!-- Footer Background -->
+        <div class="relative z-10 overflow-hidden bg-colorGreyDark">
+            <!-- Footer Top -->
+            <div class="section-space-top">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="mx-auto flex max-w-[989px] flex-wrap items-center justify-between gap-10">
+                        <h2 class="text-7xl font-extrabold md:text-8xl lg:text-9xl xl:text-[150px]">
+                            Let’s Talk
+                        </h2>
+
+                        <a class='mx-auto inline-flex h-[110px] w-[110px] items-center justify-center rounded-[50%] border border-colorOrange text-colorOrange hover:scale-110 hover:bg-colorOrange hover:text-white xl:h-[126px] xl:w-[126px]' href='/contact'>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Top -->
+
+            <!-- Footer Center -->
+            <div class="pb-[70px] pt-20 lg:pt-[100px] xl:pt-[130px]">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Center Area -->
+                    <div class="flex flex-wrap items-center justify-center gap-10 lg:justify-between">
+                        <!-- Footer Center Left Block -->
+                        <div class="flex flex-wrap items-center justify-center gap-10 lg:justify-start xl:gap-[94px]">
+                            <a href='/'>
+                                <img src="assets/img/logo-white.png" alt="logo-white" width="118" height="25" class="h-auto w-[118px]" />
+                            </a>
+
+                            <form action="#" method="post" class="relative w-full sm:w-[424px]">
+                                <input type="text" name="email" id="emai" placeholder="Your Email" class="animate-transition mb-5 w-full border-b border-white/[12%] bg-colorGreyDark pb-4 text-white outline-none placeholder:text-white/[35%] focus:border-colorOrange focus:bg-colorGreyDark sm:mb-0 sm:pr-40" required />
+                                <!-- Text Button -->
+                                <button type="submit" class="btn group right-0 top-0 mx-auto flex items-center gap-x-3 border-b border-colorOrange pb-1 text-colorOrange sm:absolute sm:inline-flex">
+                                    Subscribe Now
+                                    <span class="relative flex items-center overflow-hidden">
+                                        <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition h-3 w-6 translate-x-0 group-hover:translate-x-full" />
+                                        <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition absolute inset-0 h-3 w-6 -translate-x-full group-hover:translate-x-0" />
+                                    </span>
+                                </button>
+                                <!-- Text Button -->
+                            </form>
+                        </div>
+                        <!-- Footer Center Left Block -->
+                        <!-- Footer Center Right Block -->
+                        <div class="flex gap-[14px]">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="facebook" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-facebook.svg" alt="icon-white-facebook" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="instagram" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-instagram-fill.svg" alt="icon-white-instagram-fill" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="x" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-x-fill.svg" alt="icon-white-x-fill" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                        </div>
+                        <!-- Footer Center Right Block -->
+                    </div>
+                    <!-- Footer Center Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Center -->
+
+            <!-- Footer Bottom -->
+            <div>
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Nav -->
+                    <ul class="flex flex-wrap justify-start gap-5 border border-white/[12%] p-8 md:p-10 xl:justify-between xl:p-[60px]">
+                        <li>
+                            <a class='hover:text-colorOrange' href="index.html">Nyumbani</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="blog.html">Insights</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Footer Nav -->
+
+                    <!-- Footer Copyright Text -->
+                    <div class="py-[35px]">
+                        <p class="text-center">
+                            © 2024 All rights reserved by <a href="#" class="font-medium hover:text-colorOrange">wezalife</a>
+                        </p>
+                    </div>
+                    <!-- Footer Copyright Text -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Bottom -->
+
+            <!-- Footer Image Background -->
+            <img src="assets/img/images/th-1/footer-bg.png" alt="team-bg" width="590" height="320" class="left0 absolute top-0 -z-10" />
+            <!-- Footer Image Background -->
+        </div>
+        <!-- Footer Background -->
+    </footer>
+    <!-- ...:::Footer End:::... -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

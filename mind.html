@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WezaLife</title>
+
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/poppins/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/cabinet-grotesk/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- Development css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="/assets/css/style.min.css" /> -->
+</head>
+
+<body class="page-wrapper relative bg-colorDark">
+        <!-- ...:::Header Start:::... -->
+        <header class="section-header site-header fixed top-0 z-30 w-full py-[30px]">
+            <!-- Section Container -->
+            <div class="container">
+                <!-- Header Area -->
+                <div class="grid grid-cols-[auto_auto] justify-between">
+                    <!-- Header Left Block -->
+                    <div class="flex items-center gap-[50px]">
+                        <!-- Header Logo -->
+                        <a href='/'>
+                            <img src="assets/img/logo-white.png" alt="logo-white" width="118" height="25" class="h-auto max-w-full" />
+                        </a>
+                        <!-- Header Logo -->
+
+                        <!-- Header Navigation -->
+                        <div class="menu-block-wrapper">
+                            <div class="menu-overlay"></div>
+                            <nav class="menu-block" id="append-menu-header">
+                                <div class="mobile-menu-head">
+                                    <div class="go-back">
+                                        <img src="assets/img/icon/icon-arrow-left.svg" alt="icon-arrow-left" width="16" height="8" class="rotate-90" />
+                                    </div>
+                                    <div class="current-menu-title"></div>
+                                    <div class="mobile-menu-close">&times;</div>
+                                </div>
+                                <ul class="site-menu-main">
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="index.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >Nyumbani
+
+                                    </a>
+
+                                  </li>
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="about.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >About
+
+                                    </a>
+
+                                  </li>
+                                  <li class="nav-item nav-item-has-children">
+                                    <a
+                                      href="blog.html"
+                                      class="nav-link-item drop-trigger rounded-none border border-transparent px-5 py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:text-white"
+                                      >Insights
+
+                                    </a>
+
+                                  </li>
+                                  <li
+                                    class="nav-item rounded-none border border-transparent py-1 text-colorDark opacity-70 hover:border-white hover:opacity-100 lg:rounded-[27px] lg:px-5 lg:text-white"
+                                  >
+                                    <a class='nav-link-item' href="contact.html">Contact</a>
+                                  </li>
+
+
+
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Navigation -->
+                    </div>
+                    <!-- Header Left Block -->
+
+                    <!-- Header Right Block -->
+                    <div class="flex items-center gap-11">
+                        <!-- Search Button -->
+                        <div class="relative">
+                            <button id="toggleButton">
+                                <img src="assets/img/icon/icon-gray-search.svg" alt="icon-gray-search" width="15" height="15" class="h-5 w-5" />
+                            </button>
+                            <div id="searchContainer" class="absolute translate-y-[30px] right-0 ml-4 hidden">
+                                <input type="search" placeholder="Search..." class="border bg-colorDark rounded-[27px] px-4 py-2 focus:outline-none" />
+                            </div>
+                        </div>
+                        <!-- Search Button -->
+
+                        <!-- WhatsApp Link -->
+                        <div class="rounded-[27px] border border-white/[9%] bg-white/10 px-5 py-2 text-sm font-medium text-white/85 hidden xxl:inline-block hidden xxl:inline-block">
+                            WhatsApp:
+                            <a href="tel:+234534890111" class="font-semibold text-white">(+254) 768-893-142</a>
+                        </div>
+                        <!-- WhatsApp Link -->
+
+                        <!-- Menu Button -->
+                        <button class="hidden">
+                            <img src="assets/img/icon/icon-white-menu-line.svg" alt="icon-white-menu-line" width="24" height="24" class="h-6 w-6" />
+                        </button>
+                        <!-- Menu Button -->
+
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span class="bg-white before:bg-white after:bg-white"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header Right Block -->
+                </div>
+                <!-- Header Area -->
+            </div>
+            <!-- Section Container -->
+        </header>
+        <!-- ...::Header End:::... -->
+
+    <!-- Main Wrapper -->
+    <main class="main-wrapper">
+        <!-- ...:::Breadcrumb Section Start:::... -->
+        <section class="section-breadcrumb">
+            <div class="relative z-10">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Breadcrumb Wrapper -->
+                    <div class="breadcrumb-wrapper">
+                        <!-- Breadcrumb Nav -->
+                        <ul class="breadcrumb-nav">
+                            <li>
+                                <a href="index.html">Nyumbani</a>
+                            </li>
+                            <li>Blog</li>
+                        </ul>
+                        <!-- Breadcrumb Nav -->
+
+                        <!-- Breadcrumb Title -->
+                        <h1 class="breadcrumb-title">Our Blog</h1>
+                        <!-- Breadcrumb Title -->
+                    </div>
+                    <!-- Breadcrumb Wrapper -->
+                </div>
+                <!-- Section Container -->
+
+                <!-- Breadcrumb Background -->
+                <div class="absolute inset-0 -z-10">
+                    <img src="assets/img/images/th-1/breadcrumb.jpg" alt="breadcrumb" width="1920" height="421" class="h-full w-full object-cover" />
+                </div>
+                <!-- Breadcrumb Background -->
+            </div>
+        </section>
+        <!-- ...:::Breadcrumb Section End:::... -->
+
+        <!-- ...:::Blog Section Start:::... -->
+        <section class="section-blog">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container-custom">
+                    <!-- Blog Area -->
+                    <div class="grid grid-cols-1 items-start gap-x-6 gap-y-12 lg:grid-cols-[1fr_minmax(0,_0.7fr)] xl:grid-cols-[1fr_minmax(0,_0.5fr)]">
+                        <div class="flex flex-col gap-y-20">
+                            <!-- Blog Details -->
+                            <article class="flex flex-col gap-y-10">
+                                <!-- Blog Details Main Image  -->
+                                <img src="assets/img/images/th-1/blog-details-img.png" alt="blog-details" width="872" height="439" loading="lazy" class="h-auto w-full max-w-full" />
+                                <!-- Blog Details Main Image  -->
+
+                                <!-- Post Meta -->
+                                <div class="flex flex-wrap gap-[25px] text-sm">
+                                    <a href="#" class="relative text-white/70 after:absolute after:left-[calc(100%+12.5px)] after:top-1/2 after:h-[5px] after:w-[5px] after:-translate-y-1/2 after:rounded-[50%] after:bg-white/70 last:after:hidden hover:text-colorOrange">Admin</a>
+                                    <a href="#" class="relative text-white/70 after:absolute after:left-[calc(100%+12.5px)] after:top-1/2 after:h-[5px] after:w-[5px] after:-translate-y-1/2 after:rounded-[50%] after:bg-white/70 last:after:hidden hover:text-colorOrange">23 January 2024</a>
+                                </div>
+                                <!-- Post Meta -->
+                                <!-- Blog Details Title -->
+                                <h2>Mind Over Matter: Cultivating a Growth Mindset for Success</h2>
+                                <!-- Blog Details Title -->
+
+                                <!-- Rich Text Area-->
+                                <div class="rich-text">
+                                    <p>
+
+
+                                      Success often begins in the mind. While natural talent and resources can provide a head start, the way you perceive challenges, setbacks, and opportunities plays a significant role in determining your achievements. This is the essence of a growth mindset—a belief that abilities and intelligence can be developed through dedication, effort, and learning.
+
+                                      In this blog, we’ll explore the concept of a growth mindset, how it contrasts with a fixed mindset, and actionable steps to foster this transformative perspective.
+
+
+
+
+<h3>Understanding the Growth Mindset</h3>
+
+The term "growth mindset" was coined by psychologist Carol Dweck in her research on motivation and success. It refers to the belief that abilities can be developed through hard work, perseverance, and feedback. People with a growth mindset see challenges as opportunities to learn rather than insurmountable obstacles.
+
+
+
+<h3>Growth Mindset vs. Fixed Mindset</h3>
+
+| <h4>Growth Mindset</h4>                   | <h4>Fixed Mindset</h4>                    |
+|---------------------------------------|---------------------------------------|
+| Embraces challenges as opportunities. | Avoids challenges to prevent failure. |
+| Views effort as a path to mastery.     | Sees effort as a sign of inability.   |
+| Learns from criticism and feedback.    | Ignores or resents feedback.          |
+| Inspired by others' success.           | Feels threatened by others' success.  |
+| Believes abilities can improve.        | Believes abilities are static.        |
+
+<h3>The Science Behind a Growth Mindset</h3>
+
+Neuroscience supports the idea of a growth mindset through the concept of neuroplasticity—the brain’s ability to reorganize itself by forming new neural connections throughout life. Learning a new skill or tackling a challenge stimulates brain growth and strengthens neural pathways, proving that effort can indeed lead to improvement.
+
+For example:
+<li>Students who persist in math despite initial failures can improve their problem-solving skills over time.</li>
+<li> Athletes who continuously practice and seek feedback outperform those relying solely on innate talent.</li>
+
+<h3>Benefits of a Growth Mindset</h3>
+
+<h4>Enhanced Learning and Development</h4>
+  <li>A growth mindset encourages curiosity and lifelong learning, which leads to constant improvement.</li>
+<h4>Improved Resilience</h4>
+  <li> It helps individuals cope with failures and setbacks, viewing them as temporary and solvable.</li>
+<h4>Better Relationships</h4>
+   <li>Open-mindedness and adaptability foster stronger personal and professional relationships.</li>
+<h4>Career Advancement</h4>
+  <li>Employers value individuals who embrace challenges and seek professional growth.</li>
+
+<h3>How to Develop a Growth Mindset</h3>
+
+<h4>Reframe Challenges</h4>
+  <li>Instead of thinking, “I can’t do this,” say, “I can’t do this yet.” Focus on the learning process rather than immediate results.</li>
+
+<h4>Embrace Failure</h4>
+  <li>See failures as learning opportunities. Reflect on what went wrong and how you can improve.</li>
+
+<h4>Seek Feedback</h4>
+   <li>Constructive criticism is a gift. Use it to identify areas of growth rather than taking it personally.</li>
+
+<h4>Practice Self-Compassion</h4>
+   <li>Avoid harsh self-criticism when you make mistakes. Treat yourself with kindness and patience, just as you would a friend.</li>
+
+<h4>Cultivate Curiosity</h4>
+  <li> Be open to exploring new ideas, perspectives, and skills. Curiosity fuels growth and innovation.</li>
+
+<h4>Surround Yourself with Growth-Oriented People</h4>
+   <li> Build relationships with individuals who inspire you to learn and grow. Positive influences can reinforce your mindset.</li>
+
+<h4>Celebrate Progress</h4>
+  <li> Acknowledge small wins and incremental progress to maintain motivation.</li>
+
+<h3>Applying a Growth Mindset in Real Life</h3>
+
+<h4>In Education</h4>
+  <li>Students with a growth mindset are more likely to persevere through academic challenges and achieve higher grades.</li>
+   <li>Teachers can encourage this by praising effort rather than innate ability.</li>
+
+<h4>In the Workplace</h4>
+  <li>Professionals with a growth mindset embrace change, upskill regularly, and adapt to evolving industry trends.</li>
+  <li>Organizations can foster this by providing continuous learning opportunities.</li>
+
+<h4>In Personal Development</h4>
+   <li> Whether learning a new language, starting a fitness journey, or mastering a hobby, a growth mindset ensures you stay committed and resilient.</li>
+
+<h4>In Parenting</h4>
+  <li>Parents with a growth mindset model resilience and curiosity for their children, nurturing these traits in the next generation.</li>
+
+<h3>Overcoming Barriers to a Growth Mindset</h3>
+
+<h4>Fear of Failure</h4>
+   <li>Recognize that failure is part of the learning process and not a reflection of your worth.</li>
+<h4>Perfectionism</h4>
+  <li> Focus on progress, not perfection. Mistakes are natural and valuable for growth.</li>
+<h4>Comparison</h4>
+  <li>Avoid comparing yourself to others. Everyone’s journey is unique, and growth happens at different paces.</li>
+
+<h3>Real-Life Examples of a Growth Mindset</h3>
+
+<h4>Thomas Edison</h4>
+   <li>When asked about his numerous failed attempts to invent the light bulb, Edison famously said, "I have not failed. I've just found 10,000 ways that won't work."</li>
+
+<h4>Serena Williams</h4>
+<li>Despite numerous setbacks and injuries, Williams’ relentless dedication to improvement has solidified her status as one of the greatest athletes in history.</li>
+
+<h4>Elon Musk</h4>
+  <li>Musk’s approach to innovation in industries like space exploration and electric vehicles reflects a belief in learning through experimentation and persistence.</li>
+
+<h3>The Role of Technology in Cultivating a Growth Mindset</h3>
+
+Technology can be a powerful tool for fostering a growth mindset:
+<h4>Online Learning Platforms</h4>: Websites like Coursera and Khan Academy make learning accessible and affordable.
+<h4>Skill Development Apps</h4>: Apps like Duolingo and Skillshare encourage users to learn new skills at their own pace.
+<h4>Virtual Communities</h4>: Social media and forums connect you with growth-oriented individuals from around the world.
+
+<h3>Conclusion</h3>
+
+A growth mindset is not just a concept but a way of life. By embracing challenges, learning from failures, and seeking continuous improvement, you can unlock your potential and achieve your goals. Remember, success is not about where you start but how you adapt and grow along the way.
+
+                                    </p>
+
+
+
+
+
+
+
+
+
+                                </div>
+                                <!-- Rich Text Area-->
+                            </article>
+                            <!-- Blog Details -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Posts</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Recent Post Widget -->
+                                <ul class="flex flex-col gap-y-4">
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-1.jpg" alt="recent-post-img-1" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">23 January, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>How to manage your own business in next generation</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-2.jpg" alt="recent-post-img-2" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">09 April, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>Solving your problem with artificial inteeligence</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                    <li class="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="h-auto w-full sm:h-[90] sm:w-24">
+                                            <img src="assets/img/images/th-1/recent-post-img-3.jpg" alt="recent-post-img-3" width="95" height="91" class="h-full w-full object-cover" />
+                                        </div>
+                                        <!-- Recent Post Thumbnails -->
+                                        <div class="flex-1">
+                                            <!-- Blog Post Meta -->
+                                            <a href="#" class="mb-2 block text-sm text-colorOrange">23 July, 2024</a>
+                                            <!-- Blog Post Meta -->
+
+                                            <!-- Blog Title -->
+                                            <a class='font-semibold hover:text-colorOrange' href='/blog-details'>You can grow up your own business with AI</a>
+                                            <!-- Blog Title -->
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Recent Post Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Contact Us</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Contact Widget -->
+                                <form action="#" method="get" class="flex flex-col gap-y-10">
+                                    <input type="text" name="sidebar-name" id="sidebar-name" placeholder="Your name" class="animate-transition w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required />
+                                    <input type="email" name="sidebar-email" id="sidebar-email" placeholder="Your email" class="animate-transition w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required />
+                                    <textarea name="sidebar-message" id="sidebar-message" placeholder="Your message" class="animate-transition min-h-40 w-full border-b border-white/[12%] bg-transparent pb-2 pr-5 text-sm font-normal text-white outline-none placeholder:text-white/[52%] focus:border-colorOrange" required></textarea>
+                                    <button type="submit" class="btn group flex items-center justify-center gap-x-3 border border-colorOrange px-9 py-4 text-colorOrange">
+                                        Send Message
+                                        <span class="relative flex items-center overflow-hidden">
+                                            <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition h-3 w-6 translate-x-0 group-hover:translate-x-full" />
+                                            <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition absolute inset-0 h-3 w-6 -translate-x-full group-hover:translate-x-0" />
+                                        </span>
+                                    </button>
+                                </form>
+                                <!-- Contact Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+
+                            <!-- Sidebar Item -->
+                            <div>
+                                <!-- Sidebar Title -->
+                                <h4 class="mb-7 font-body font-semibold">Tags</h4>
+                                <!-- Sidebar Title -->
+
+                                <!-- Tags Widget -->
+                                <ul class="flex flex-wrap gap-[14px] text-sm">
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Education</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Optimization</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block border border-white/[12%] px-[18px] py-2 text-white/[54%] hover:border-colorOrange hover:bg-colorOrange hover:text-white">Creator</a>
+                                    </li>
+                                </ul>
+                                <!-- Tags Widget -->
+                            </div>
+                            <!-- Sidebar Item -->
+                        </aside>
+                        <!-- Sidebar Block -->
+                    </div>
+                    <!-- Blog Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...:::Blog Section End:::... -->
+    </main>
+    <!-- Main Wrapper -->
+
+    <!-- ...:::Footer Start:::... -->
+    <footer class="section-footer">
+        <!-- Footer Background -->
+        <div class="relative z-10 overflow-hidden bg-colorGreyDark">
+            <!-- Footer Top -->
+            <div class="section-space-top">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="mx-auto flex max-w-[989px] flex-wrap items-center justify-between gap-10">
+                        <h2 class="text-7xl font-extrabold md:text-8xl lg:text-9xl xl:text-[150px]">
+                            Let’s Talk
+                        </h2>
+
+                        <a class='mx-auto inline-flex h-[110px] w-[110px] items-center justify-center rounded-[50%] border border-colorOrange text-colorOrange hover:scale-110 hover:bg-colorOrange hover:text-white xl:h-[126px] xl:w-[126px]' href='/contact'>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Top -->
+
+            <!-- Footer Center -->
+            <div class="pb-[70px] pt-20 lg:pt-[100px] xl:pt-[130px]">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Center Area -->
+                    <div class="flex flex-wrap items-center justify-center gap-10 lg:justify-between">
+                        <!-- Footer Center Left Block -->
+                        <div class="flex flex-wrap items-center justify-center gap-10 lg:justify-start xl:gap-[94px]">
+                            <a href='/'>
+                                <img src="assets/img/logo-white.png" alt="logo-white" width="118" height="25" class="h-auto w-[118px]" />
+                            </a>
+
+                            <form action="#" method="post" class="relative w-full sm:w-[424px]">
+                                <input type="text" name="email" id="emai" placeholder="Your Email" class="animate-transition mb-5 w-full border-b border-white/[12%] bg-colorGreyDark pb-4 text-white outline-none placeholder:text-white/[35%] focus:border-colorOrange focus:bg-colorGreyDark sm:mb-0 sm:pr-40" required />
+                                <!-- Text Button -->
+                                <button type="submit" class="btn group right-0 top-0 mx-auto flex items-center gap-x-3 border-b border-colorOrange pb-1 text-colorOrange sm:absolute sm:inline-flex">
+                                    Subscribe Now
+                                    <span class="relative flex items-center overflow-hidden">
+                                        <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition h-3 w-6 translate-x-0 group-hover:translate-x-full" />
+                                        <img src="assets/img/icon/icon-orange-arrow-long-right.svg" alt="icon-orange-arrow-long-right" width="24" height="12" class="animate-transition absolute inset-0 h-3 w-6 -translate-x-full group-hover:translate-x-0" />
+                                    </span>
+                                </button>
+                                <!-- Text Button -->
+                            </form>
+                        </div>
+                        <!-- Footer Center Left Block -->
+                        <!-- Footer Center Right Block -->
+                        <div class="flex gap-[14px]">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="facebook" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-facebook.svg" alt="icon-white-facebook" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="instagram" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-instagram-fill.svg" alt="icon-white-instagram-fill" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="x" class="inline-flex h-14 w-14 items-center justify-center rounded-[50%] border border-white/[8%] bg-white/5 hover:bg-colorOrange">
+                                <img src="assets/img/icon/icon-white-x-fill.svg" alt="icon-white-x-fill" width="24" height="24" class="h-auto w-6" />
+                            </a>
+                        </div>
+                        <!-- Footer Center Right Block -->
+                    </div>
+                    <!-- Footer Center Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Center -->
+
+            <!-- Footer Bottom -->
+            <div>
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Nav -->
+                    <ul class="flex flex-wrap justify-start gap-5 border border-white/[12%] p-8 md:p-10 xl:justify-between xl:p-[60px]">
+                        <li>
+                            <a class='hover:text-colorOrange' href="index.html">Nyumbani</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="blog.html">Insights</a>
+                        </li>
+                        <li>
+                            <a class='hover:text-colorOrange' href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <!-- Footer Nav -->
+
+                    <!-- Footer Copyright Text -->
+                    <div class="py-[35px]">
+                        <p class="text-center">
+                            © 2024 All rights reserved by <a href="#" class="font-medium hover:text-colorOrange">wezalife</a>
+                        </p>
+                    </div>
+                    <!-- Footer Copyright Text -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Bottom -->
+
+            <!-- Footer Image Background -->
+            <img src="assets/img/images/th-1/footer-bg.png" alt="team-bg" width="590" height="320" class="left0 absolute top-0 -z-10" />
+            <!-- Footer Image Background -->
+        </div>
+        <!-- Footer Background -->
+    </footer>
+    <!-- ...:::Footer End:::... -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
