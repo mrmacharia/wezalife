@@ -1886,11 +1886,11 @@ a,
 
 .border-colorOrange {
   --tw-border-opacity: 1;
-  border-color: rgb(255 106 22 / var(--tw-border-opacity));
+  border-color: rgb(60 179 113  / var(--tw-border-opacity));
 }
 
 .border-colorOrange\/\[9\%\] {
-  border-color: rgb(255 106 22 / 9%);
+  border-color: rgb(60 179 113  / 9%);
 }
 
 .border-transparent {
@@ -1944,11 +1944,11 @@ a,
 
 .bg-colorOrange {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 106 22 / var(--tw-bg-opacity));
+  background-color: rgb(60 179 113  / var(--tw-bg-opacity));
 }
 
 .bg-colorOrange\/\[4\%\] {
-  background-color: rgb(255 106 22 / 4%);
+  background-color: rgb(60 179 113  / 4%);
 }
 
 .bg-transparent {
@@ -2374,7 +2374,7 @@ a,
 
 .text-colorOrange {
   --tw-text-opacity: 1;
-  color: rgb(255 106 22 / var(--tw-text-opacity));
+  color: rgb(60 179 113 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -2658,8 +2658,8 @@ a,
 }
 
 .section-tag-orange {
-  border-color: rgb(255 106 22 / 9%);
-  background-color: rgb(255 106 22 / 4%);
+  border-color: rgb(60 179 113 / 9%);
+  background-color: rgb(60 179 113  / 4%);
   --tw-text-opacity: 1;
   color: rgb(255 106 22 / var(--tw-text-opacity));
 }
@@ -3193,7 +3193,7 @@ a,
 
 .hover\:border-colorOrange:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(255 106 22 / var(--tw-border-opacity));
+  border-color: rgb(60 179 113  / var(--tw-border-opacity));
 }
 
 .hover\:border-white:hover {
@@ -3212,7 +3212,7 @@ a,
 
 .hover\:bg-colorOrange:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 106 22 / var(--tw-bg-opacity));
+  background-color: rgb(60 179 113 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white\/50:hover {
@@ -3225,7 +3225,7 @@ a,
 
 .hover\:text-colorOrange:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 106 22 / var(--tw-text-opacity));
+  color: rgb(60 179 113  / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -3244,7 +3244,7 @@ a,
 
 .focus\:border-colorOrange:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(255 106 22 / var(--tw-border-opacity));
+  border-color: rgb(60 179 113  / var(--tw-border-opacity));
 }
 
 .focus\:bg-colorGreyDark:focus {
@@ -3303,7 +3303,7 @@ a,
 
 .group:hover .group-hover\:bg-colorOrange {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 106 22 / var(--tw-bg-opacity));
+  background-color: rgb(60 179 113  / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:text-white {
